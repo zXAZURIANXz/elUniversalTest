@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref='/'></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>{{notaSel.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="welcome-card">
+    <ion-img [src]="notaSel.image"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>{{fecha | date:'fullDate'}}</ion-card-subtitle>
+      <ion-card-subtitle>{{notaSel.subtitle}}</ion-card-subtitle>
+      <ion-card-title>{{notaSel.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content >
+      <p>{{notaSel.body}}</p>
+    </ion-card-content>
+  </div>
+</ion-content>

@@ -1,4 +1,9 @@
 .welcome-card ion-img {
-  max-height: 35vh;
+  max-height: 40vh;
+  width: 100% !important;
   overflow: hidden;
+}
+img{
+  width:25px;
+  margin-right: 5px;
 }
